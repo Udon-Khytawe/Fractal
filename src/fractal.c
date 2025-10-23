@@ -14,8 +14,8 @@ int main(int argc, char *argv[]){
 	}
 	//set up the color pallet
 	rgb_t left = (rgb_t){0,0,0};
-	rgb_t center = (rgb_t){255,0,255};
-	rgb_t right = (rgb_t){255,255,255};
+	rgb_t center = (rgb_t){255,255,255};
+	rgb_t right = (rgb_t){0,0,0};
 
 	//get the command line input
 	size_t n = strtoul(argv[1], NULL, 10);
