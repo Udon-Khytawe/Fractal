@@ -9,6 +9,26 @@ typedef struct{
 	uint8_t b;//blue value  
 } rgb_t;
 
+enum color_name{
+	WHITE,
+	BLACK,
+	RED,
+	GREEN,
+	BLUE,
+	PURPLE,
+	YELLOW,
+	CYAN,
+	ORANGE,
+	PINK
+};
+
+/*
+ * Returns the rgb value for a given color
+ * @param color name from enum
+ * @return rgb value 
+ */
+rgb_t get_color(const enum color_name color);
+
 /*
  * Returns a linear blend between the left and right colors 
  * @param left the leftmost color in the colormap
